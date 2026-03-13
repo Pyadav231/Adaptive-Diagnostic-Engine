@@ -76,3 +76,6 @@ def submit_answer(data: dict):
         "new_ability": ability,
         "next_question": next_question
     }
+@app.get("/get_result")
+def get_result():
+    return {"message": "Test completed", "score": 80}
